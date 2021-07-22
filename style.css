@@ -1,0 +1,126 @@
+body {
+  margin: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+  -webkit-box-shadow: 1px 1px 27px -4px #d3d3d3;
+  box-shadow: 1px 1px 27px -4px #d3d3d3;
+}
+
+.nav-item :hover {
+  border-bottom: 3px solid rgba(49, 141, 252, 0.96);
+}
+.nav-link {
+  width: 100px;
+  font-size: 20px;
+}
+
+.hero p {
+  animation: backInUp;
+  animation-duration: 3s;
+}
+.hero img {
+  animation: slideInRight;
+  animation-duration: 3s;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    position: relative;
+  }
+  .hero h1 {
+    padding-top: 30px;
+  }
+  .hero .animasi-teks {
+    flex-wrap: wrap;
+    font-size: 70%;
+  }
+  .hero img {
+    flex-wrap: wrap;
+    width: 300px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .navbar {
+    position: relative;
+  }
+  .hero h1 {
+    padding-top: 30px;
+  }
+  .hero .animasi-teks {
+    flex-wrap: wrap;
+    font-size: 70%;
+  }
+  .hero img {
+    flex-wrap: wrap;
+    width: 300px;
+    padding: 0;
+    margin: 0;
+  }
+
+  #about {
+    height: 100%;
+  }
+}
+
+.animasi-teks {
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typing 3s steps(70, end);
+  animation: animasi-ketik 3s steps(70, end);
+}
+
+@keyframes animasi-ketik {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes animasi-ketik {
+  from {
+    width: 0;
+  }
+}
+
+.animasi-teks {
+  font-size: 30px;
+  width: 380px;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typing 3s steps(70, end);
+  animation: animasi-ketik 3s steps(70, end);
+}
+
+@keyframes animasi-ketik {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes animasi-ketik {
+  from {
+    width: 0;
+  }
+}
+
+#about {
+  height: 800px;
+  padding: 10px 0 0 50px;
+}
+
+.card {
+  height: 200px;
+}
+.card-img-top {
+  width: 100px;
+}
+
+.contact-info h3 {
+  font-size: 16px;
+}
